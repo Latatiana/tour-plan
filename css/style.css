@@ -709,6 +709,7 @@ template {
   min-height: 210px;
   padding: 28px;
   border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
   background: #0A223D;
   color: #ffffff;
 }
