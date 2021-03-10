@@ -11,7 +11,7 @@
                 object-fit: cover
 
 @media ( max-width: 992px )
-    .container
+    .container, .newsletter-wrapper
         max-width: 700px
     .logo
         width: 132px
@@ -41,6 +41,7 @@
         width: 340px
     .slider
         width: 100%
+
 @media (max-width:800px)
     .navbar
         &-menu
@@ -65,6 +66,10 @@
         &__button
             &:hover
                 filter: brightness(100%)
+    .subscribe
+        &__button
+            &:hover
+                filter: brightness(100%)
             
 
 @media ( max-width: 768px )
@@ -74,7 +79,6 @@
     .navbar
         &__search,&-menu, &__user
             display: none
-
     .menu
         &-button
             display: flex
@@ -121,6 +125,15 @@
         margin-bottom: 20px
     .map
         width: 100% 
+    .newsletter
+        &-wrapper
+            flex-direction: column
+            max-width: 576px
+            width: 92%
+            align-items: flex-start   
+    .subscribe
+        width: 100%  
+        
 
 @media (max-width:576px)
     .logo
@@ -130,6 +143,19 @@
     .hotel
         &__slider
             margin-bottom: 20px
+    .newsletter
+        padding: 76px 0 83px 0        
+        &__title
+            font-size: 20px
+            line-height: 25px
+            margin-bottom: 37px
+            &__strong
+                font-size: 30px
+                line-height: 38px
+    .subscribe
+        width: 100%
+        
+
 
 @media (max-width:422px)
     .hotel
