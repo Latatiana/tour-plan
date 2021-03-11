@@ -1,10 +1,10 @@
 .newsletter
     position: relative
     padding: 98px 0 87px 0
-    background-image: url(../img/newsletter-bg.jpg)
-    background-repeat: no-repeat  
-    background-size: cover 
-    background-position: center
+    // background-image: url(../img/newsletter-bg.jpg)
+    // background-repeat: no-repeat
+    // background-size: cover
+    // background-position: center
     &::before
         content: ''
         position: absolute
@@ -34,10 +34,16 @@
             font-size: 36px
             line-height: 45px
             text-transform: uppercase
+    &__subscribe
+        display: flex
+        flex-shrink: 0
+    &__title
+        max-width: 248px
+
 .subscribe
     position: relative
     width: 350px
-    height: 55px
+    min-height: 55px
     border-radius: 4px
     overflow: hidden
     &__input
@@ -51,12 +57,13 @@
         font-weight: 300
         font-size: 14px
         line-height: 18px
-        outline: none        
+        outline: none
     &__button
-        position: absolute
-        min-width: 65px
-        right: 0
-        top: 0
+        display: inline-block
+        position: relative
+        width: 66px
+        min-height: 55px
+        margin-left: 81.4%        
         height: 100%
         border: none
         background-color: $primary
@@ -65,4 +72,3 @@
         cursor: pointer
         &:hover
             filter: brightness(80%)
-        
