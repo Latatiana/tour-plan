@@ -166,6 +166,11 @@
             right: 0
             width: 65px                       
     .reviews
+        min-height: 438px
+        &__title
+            &-wrap:before
+                content: "\A"
+                white-space: pre
         &-slider
             &__item
                 padding: 0 30px 30px
@@ -181,6 +186,7 @@
                     right: 50%
                     margin-right: -65px
                     transform: translate(50%, 0) 
+            
     .card
         width: 48%
     
@@ -213,6 +219,8 @@
         &__title
             font-size: 18px
             line-height: 23px
+            
+
         &__text
             text-align: none
     .card

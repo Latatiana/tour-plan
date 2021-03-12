@@ -968,6 +968,10 @@ template {
   margin-bottom: 70px;
 }
 
+.reviews-slider {
+  width: 100%;
+}
+
 .reviews-slider__item {
   position: relative;
   display: -webkit-box;
@@ -1118,6 +1122,7 @@ template {
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 57px;
+  margin-top: 0;
 }
 
 .activities-wrapper {
@@ -1428,6 +1433,13 @@ template {
     top: 0;
     right: 0;
     width: 65px;
+  }
+  .reviews {
+    min-height: 438px;
+  }
+  .reviews__title-wrap:before {
+    content: "\A";
+    white-space: pre;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
