@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -852,6 +853,220 @@ template {
   margin-left: 0;
 }
 
+.packages {
+  padding: 40px 165px 70px 165px;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 0;
+}
+
+.packages__card {
+  background-color: #0A223D;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages__card-special {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #0A223D;
+}
+
+.packages__image {
+  width: 100%;
+  min-height: 250px;
+  height: 50%;
+}
+
+.packages__title {
+  margin: 40px 0 65px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.packages__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages__address {
+  margin-bottom: 11px;
+}
+
+.packages__guests {
+  margin-bottom: 11px;
+}
+
+.packages__icon {
+  margin-right: 15px;
+}
+
+.book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.book__price {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 92px;
+}
+
+.book__booking {
+  padding: 11px 27px;
+  border-radius: 4px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  line-height: 19px;
+  background: #EC1F46;
+  color: #ffffff;
+}
+
+.book__old-price {
+  margin-bottom: 5px;
+  text-decoration: line-through;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.book__new-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 250px;
+      grid-template-columns: 250px 250px;
+}
+
+.card-special {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-special-wrapper {
+  padding: 47px 21px 30px 44px;
+  width: 50%;
+  color: #ffffff;
+}
+
+.card-special__image {
+  width: 50%;
+  max-width: 366px;
+  min-height: 500px;
+  height: 100%;
+}
+
+.card-special__rating {
+  margin-bottom: 6px;
+}
+
+.card-special__title {
+  margin-bottom: 27px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.card-special__text {
+  margin-bottom: 34px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.card-special__info {
+  margin-bottom: 37px;
+}
+
+.card-special__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  padding: 8px 12px;
+  background: #EC1F46;
+  border-radius: 0px 4px 4px 0px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.card-hotel {
+  position: relative;
+}
+
+.card-hotel-wrapper {
+  padding: 30px 21px 25px 32px;
+}
+
+.card-hotel__title {
+  margin-bottom: 23px;
+  margin-top: 0;
+}
+
+.card-hotel__info {
+  padding-bottom: 24px;
+}
+
+.card-hotel__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  padding: 4px 9px;
+  background: #EC1F46;
+  border-radius: 0px 4px 4px 0px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1252,8 +1467,8 @@ template {
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .navbar-menu__limk {
-    font-style: 12px;
+  .navbar-menu__liтk {
+    font-size: 12px;
     line-height: 15px;
   }
   .search__input {
@@ -1500,9 +1715,6 @@ template {
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
-  }
-  .reviews__text {
-    text-align: none;
   }
   .card {
     width: 100%;
