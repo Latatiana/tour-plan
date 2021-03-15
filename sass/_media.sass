@@ -31,6 +31,10 @@
                 padding: 20px 20px 20px 20px
             &__text
                 margin-bottom: 15px
+    
+    .footer
+        &__input
+            flex-basis: 100%
 
 @media ( max-width: 992px )
     .container, .newsletter-wrapper
@@ -134,7 +138,36 @@
                 padding: 0
                 margin-bottom: 20px    
 
-
+    .footer
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-gap: 38px
+        &__input
+            flex-basis: 49%
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 2            
+        &__social
+            &-network
+                grid-row: 1 / 2 
+                grid-column: span 4
+                align-self: center
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+        &__legal
+            grid-column: span 2
+        &__additional
+            grid-column: span 2
+        &__contact
+            &-details
+                grid-column: span 5
+                grid-row: 3 
+            &-form
+                grid-column: span 5
+                grid-row: 4
+        &-bottom
+            margin-top: 80px
 
 
 @media (max-width:800px)
@@ -178,7 +211,18 @@
     .book
         &__booking
             &:hover
-            filter: brightness(100%)   
+                filter: brightness(100%)   
+    .footer
+        &__button
+            &:hover
+                filter: brightness(100%)  
+        &__link
+            &:hover
+                text-decoration: none
+        &-bottom
+            &__link
+                &:hover
+                    text-decoration: none 
 
 @media ( max-width: 768px )
     .container
@@ -326,6 +370,14 @@
             &__info
                 padding: 0
                 margin-bottom: 20px  
+    .footer
+        &__input
+            flex-basis: 100%
+        &-bottom
+            &__list
+                margin-right: auto
+                
+
 
 @media ( max-width: 637px )
     .present
@@ -466,6 +518,48 @@
         &__new-price
             font-size: 14px
             line-height: 11px 
+    .footer
+        padding-bottom: 21px
+        padding-top: 69px
+        &-wrapper
+            grid-template-columns: 1fr
+            
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+        &__additional
+            grid-row: 4
+            grid-column: 1
+        &__categories
+            grid-row: 5
+            grid-column: 1
+        &__legal
+            margin-left: 0
+            grid-row: 3
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
+        &-bottom
+            margin-top: 30px
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+            
+            &__list
+                margin-bottom: 10px
+            &__image
+                margin: 0
+            
+
 
 @media ( max-width: 519px )
     .present
