@@ -2279,6 +2279,9 @@ template {
   .logo {
     width: 99px;
   }
+  .navbar-bottom {
+    overflow-y: auto;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
@@ -2547,6 +2550,12 @@ template {
 }
 
 @media (max-width: 387px) {
+  .hotel-slider {
+    height: 179px;
+  }
+  .search__input {
+    max-width: 243px;
+  }
   .packages-wrapper {
     -ms-grid-rows: 300px 300px 300px 300px 300px;
         grid-template-rows: 300px 300px 300px 300px 300px;

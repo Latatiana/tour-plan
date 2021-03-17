@@ -311,6 +311,7 @@
         &-slider
             max-width: 576px
             height: 350px
+    
     .booking
         width: 100%
         margin-bottom: 20px
@@ -441,6 +442,9 @@
 @media ( max-width: 576px )
     .logo
         width: 99px
+    .navbar
+        &-bottom            
+            overflow-y: auto
     .hotel
         &__slider
             margin-bottom: 20px
@@ -595,7 +599,6 @@
             flex-direction: column
             justify-content: flex-start
             align-items: flex-start
-
             &__list
                 margin-bottom: 10px
             &__image
@@ -621,6 +624,13 @@
                 font-size: 16px
 
 @media ( max-width: 387px )
+    .hotel
+        &-slider
+            height: 179px
+    
+    .search
+        &__input
+            max-width: 243px
     .packages
         &-wrapper
             grid-template-rows: 300px 300px 300px 300px 300px
