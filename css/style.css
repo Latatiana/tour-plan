@@ -392,6 +392,7 @@ template {
 
 .navbar-bottom {
   background-color: #0A223D;
+  overflow-y: auto;
 }
 
 .navbar-menu {
@@ -2278,9 +2279,6 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
-  }
-  .navbar-bottom {
-    overflow-y: auto;
   }
   .hotel__slider {
     margin-bottom: 20px;
