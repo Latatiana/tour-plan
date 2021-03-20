@@ -168,6 +168,9 @@
                 grid-row: 4
         &-bottom
             margin-top: 80px
+    .modal
+        &__dialog
+            padding: 33px 60px
 
 @media (max-width:800px)
     .navbar
@@ -222,6 +225,10 @@
             &__link
                 &:hover
                     text-decoration: none
+    .modal
+        &__button
+            &:hover
+                filter: brightness(100%)
 
 @media ( max-width: 768px )
     .container
@@ -236,7 +243,7 @@
                 left: 0
                 top: 0
                 right: 0
-                z-index: 99            
+                z-index: 99
         &__search, &__user
             &--mobile
                 &--hidden
@@ -251,7 +258,7 @@
             position: fixed
             left: 0
             bottom: 0
-            right: 0            
+            right: 0
             top: 78px
             padding-top: 30px
             &--visible
@@ -263,7 +270,7 @@
                 &--mobile
                     &--visible
                         display: block
-        
+
     .menu
         &-button
             display: flex
@@ -311,7 +318,7 @@
         &-slider
             max-width: 576px
             height: 350px
-    
+
     .booking
         width: 100%
         margin-bottom: 20px
@@ -416,6 +423,14 @@
         &-bottom
             &__list
                 margin-right: auto
+    .modal
+        &__dialog
+            padding: 33px 40px
+        &__button
+            margin-bottom: 10px
+            width: 100%
+        &__input, &__message
+            font-size: 12px
 
 @media ( max-width: 637px )
     .present
@@ -441,8 +456,8 @@
 
 @media ( max-width: 576px )
     .logo
-        width: 99px        
-            
+        width: 99px
+
     .hotel
         &__slider
             margin-bottom: 20px
@@ -601,6 +616,9 @@
                 margin-bottom: 10px
             &__image
                 margin: 0
+    .modal
+        &__dialog
+            max-width: 70%
 
 @media ( max-width: 519px )
     .present
@@ -625,7 +643,7 @@
     .hotel
         &-slider
             height: 179px
-    
+
     .search
         &__input
             max-width: 243px

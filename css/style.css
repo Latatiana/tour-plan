@@ -1716,6 +1716,15 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -1730,6 +1739,15 @@ template {
   border-radius: 8px;
   color: #ffffff;
   z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
@@ -1754,8 +1772,9 @@ template {
   margin-bottom: 15px;
 }
 
-.modal__button {
-  margin-right: 39px;
+.modal__button:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 .modal__info {
@@ -1774,6 +1793,20 @@ template {
   margin-top: 0;
   text-transform: uppercase;
   text-align: center;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .thankyou {
@@ -2043,6 +2076,9 @@ template {
   .footer-bottom {
     margin-top: 80px;
   }
+  .modal__dialog {
+    padding: 33px 60px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -2090,6 +2126,10 @@ template {
   }
   .footer-bottom__link:hover {
     text-decoration: none;
+  }
+  .modal__button:hover {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
 }
 
@@ -2362,6 +2402,16 @@ template {
   }
   .footer-bottom__list {
     margin-right: auto;
+  }
+  .modal__dialog {
+    padding: 33px 40px;
+  }
+  .modal__button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .modal__input, .modal__message {
+    font-size: 12px;
   }
 }
 
@@ -2636,6 +2686,9 @@ template {
   }
   .footer-bottom__image {
     margin: 0;
+  }
+  .modal__dialog {
+    max-width: 70%;
   }
 }
 

@@ -1,3 +1,4 @@
+$(document).ready(function (){
 const hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
@@ -11,85 +12,45 @@ const hotelSlider = new Swiper(".hotel-slider", {
   },
 });
 
-const reviewsSlider = new Swiper(".reviews-slider", {
-  // Optional parameters
-  loop: true,
-  // Navigation arrows
-  keyboard: {
-    enabled: true,
-    },
-  navigation: {
-    nextEl: '.reviews-slider__button-next',
-    prevEl: '.reviews-slider__button-prev',
-  },
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function(){
+console.log("click");
+document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
 });
-
-//map
-ymaps.ready(init);
-
-function init() {
-    var myMap = new ymaps.Map("map", {
-            center: [10.30803757761703, 124.01952350845728],
-            zoom: 10
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-    // Создаем геообъект с типом геометрии "Точка".
-        myGeoObject = new ymaps.GeoObject({
-            // Описание геометрии.
-            geometry: {
-                type: "Point",
-                coordinates: [10.30803757761703, 124.01952350845728]
-            },
-            // Свойства.            
-        }, {
-            // Опции.
-            // Иконка метки будет растягиваться под размер ее содержимого.
-            preset: 'islands#blackStretchyIcon',
-            // Метку можно перемещать.
-            draggable: true
-        }),
-        myPieChart = new ymaps.Placemark([
-            10.30803757761703, 124.01952350845728
-        ], {
-            // Данные для построения диаграммы.
-            data: [
-                {weight: 8, color: '#0E4779'},
-                {weight: 6, color: '#1E98FF'},
-                {weight: 4, color: '#82CDFF'}
-            ],
-            iconCaption: "Диаграмма"
-        }, {
-            // Зададим произвольный макет метки.
-            iconLayout: 'default#pieChart',
-            // Радиус диаграммы в пикселях.
-            iconPieChartRadius: 30,
-            // Радиус центральной части макета.
-            iconPieChartCoreRadius: 10,
-            // Стиль заливки центральной части.
-            iconPieChartCoreFillStyle: '#ffffff',
-            // Cтиль линий-разделителей секторов и внешней обводки диаграммы.
-            iconPieChartStrokeStyle: '#ffffff',
-            // Ширина линий-разделителей секторов и внешней обводки диаграммы.
-            iconPieChartStrokeWidth: 3,
-            // Максимальная ширина подписи метки.
-            iconPieChartCaptionMaxWidth: 200
-        });
-
-    myMap.geoObjects
-                      
-        .add(new ymaps.Placemark([10.30803757761703, 124.01952350845728], {
-            balloonContent: 'цвет <strong>носика Гены</strong>',
-            iconCaption: 'GRAND HILTON HOTEL'
-        }, {
-            preset: 'islands#greenDotIconWithCaption'
-        }))
-        
-}
 
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function(){
 console.log("click");
 document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+});
+
+
+var modalButton = $("[data-toggle=modal]");
+var closeModalButton = $(".modal__close");
+modalButton.on('click', openModal);
+closeModalButton.on('click', closeModal);
+
+    function openModal(){
+        var modalOverlay = $('.modal__overlay');
+        var modalDialog = $('.modal__dialog');
+        modalOverlay.addClass('modal__overlay--visible');
+        modalDialog.addClass('modal__dialog--visible');
+    }
+
+    function closeModal(event){
+        event.preventDefault();
+        var modalOverlay = $('.modal__overlay');
+        var modalDialog = $('.modal__dialog');
+        modalOverlay.removeClass('modal__overlay--visible');
+        modalDialog.removeClass('modal__dialog--visible');
+    }
+    $(document).on('keydown',function(event) {
+    if (event.keyCode == 27) {
+            event.preventDefault();
+            var modalOverlay = $('.modal__overlay');
+            var modalDialog = $('.modal__dialog');
+            modalOverlay.removeClass('modal__overlay--visible');
+            modalDialog.removeClass('modal__dialog--visible');
+        }
+});
 });
