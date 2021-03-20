@@ -1794,12 +1794,26 @@ template {
 }
 
 .thankyou-info__click {
+  width: 145px;
   text-decoration: none;
-  color: inherit;
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  text-align: center;
+  background-color: #EC1F46;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
 }
 
-.thankyou-info__button {
-  width: 145px;
+.thankyou-info__click:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 @media (max-width: 1200px) {
