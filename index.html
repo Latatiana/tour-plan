@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=cb65ca87-3ef9-4b05-936c-25bf0d0c82f8&lang=ru_RU"></script>
 </head>
 <body>
     <header class="navbar navbar--mobile--fixed">
@@ -183,7 +182,9 @@
                 </div>
                 <!-- /.booking -->
                 <div class="map">
-                    <div id="map" style="width: 100%; height: 213px"></div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.293607155145!2d123.89332451474488!3d10.318371292633326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99937e4dbdaeb%3A0x63e990bcb1068939!2sCebu%20Grand%20Hotel!5e0!3m2!1sru!2sru!4v1616212833790!5m2!1sru!2sru"
+                        width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <!-- /.map -->
             </div>
@@ -373,8 +374,13 @@
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form action="send.php" method= "POST" class="subscribe newsletter__subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email address" name = "email">
+            <form action="send.php" method ="POST" class="subscribe newsletter__subscribe">
+                <input 
+                type="text" 
+                class="subscribe__input" 
+                placeholder="Your email address"
+                name ="sub"
+                >
                 <button class="subscribe__button">Send</button>
                 
             </form>
@@ -584,8 +590,7 @@
                             name ="phone"
                             >
                             <textarea
-                             class="footer__message" 
-                             rows="6" 
+                             class="message footer__message" 
                              placeholder="Message"
                              name="message"
                              ></textarea>
@@ -609,6 +614,23 @@
             <!-- /.footer__footer-bottom -->
         </div>
     </footer>
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="icon: close">
+            </a>
+            <h3 class="modal__title modal__title--mb-3">Booking</h3>
+            <form action="send.php" method="POST" class="modal__form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+                <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+                <input type="text" class="input modal__input" placeholder="Email*" name="email">
+                <textarea class="message modal__message" rows="6" placeholder="Message" name="message"></textarea>
+                <button class="button modal__button" type="submit">Send</button>
+                <span class="modal__info">* Required Fields</span>
+            </form>
+        </div>
+    </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
