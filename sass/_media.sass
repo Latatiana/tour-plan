@@ -1,4 +1,6 @@
 @media ( max-width: 1200px  )
+    body
+        overflow: auto
     .container
         max-width: 960px
     .hotel
@@ -34,7 +36,8 @@
 
     .footer
         &__input
-            flex-basis: 100%
+            &-group
+                flex-basis: 100%
 
 @media ( max-width: 992px )
     .container, .newsletter-wrapper
@@ -50,13 +53,14 @@
         &-menu
             padding-top: 22px
             padding-bottom: 22px
-            &__liтk
+            &__link
                 font-size: 12px
                 line-height: 15px
     .search
         &__input
             width: 340px
     .hotel
+        padding-bottom: 60px
         &-grid
             flex-direction: column
         &__slider
@@ -67,6 +71,7 @@
             width: 100%
     .booking
         width: 340px
+        padding: 29px 22px 26px 22px
     .reviews
         &-slider
             &__item
@@ -103,6 +108,9 @@
             font-size: 14px
         &__new-price
             font-size: 16px
+    .subscribe
+        &__button
+            margin-left: 81.5%
     .present
         &-special
             &-wrapper
@@ -143,7 +151,8 @@
             grid-template-columns: repeat(6, 1fr)
             grid-gap: 38px
         &__input
-            flex-basis: 49%
+            &-group
+                flex-basis: 49%
         &__logo
             grid-row: 1 / 2
             grid-column: span 2
@@ -171,8 +180,6 @@
     .modal
         &__dialog
             padding: 33px 60px
-
-@media (max-width:800px)
     .navbar
         &-menu
             &__link
@@ -229,6 +236,9 @@
         &__button
             &:hover
                 filter: brightness(100%)
+
+@media (max-width:800px)
+    
 
 @media ( max-width: 768px )
     .container
@@ -296,6 +306,7 @@
     .stars
         flex-basis: auto
     .hotel
+        padding-bottom: 40px
         &-name
             flex-basis: 100%
         &-wrapper
@@ -324,6 +335,9 @@
         margin-bottom: 20px
     .map
         width: 100%
+        height: 210px
+    iframe
+        height: 210px
     .newsletter
         &-wrapper
             flex-direction: column
@@ -333,6 +347,8 @@
     .subscribe
         position: relative
         width: 100%
+        &__input
+            width: 100%
         &__button
             position: absolute
             top: 0
@@ -419,18 +435,20 @@
                 margin-bottom: 20px
     .footer
         &__input
-            flex-basis: 100%
+            &-group
+                flex-basis: 100%
         &-bottom
             &__list
                 margin-right: auto
     .modal
+        
         &__dialog
             padding: 33px 40px
+            width: 96%
         &__button
             margin-bottom: 10px
             width: 100%
         &__input, &__message
-            font-size: 12px
 
 @media ( max-width: 637px )
     .present
@@ -618,7 +636,11 @@
                 margin: 0
     .modal
         &__dialog
-            max-width: 70%
+            max-width: 96%
+    .map
+        height: 172px
+    iframe
+        height: 172px
 
 @media ( max-width: 519px )
     .present
@@ -665,6 +687,7 @@
             margin-bottom: 11px
         &__icon
             margin-right: 12px
+            
     .present
         &-hotel
             &-wrapper

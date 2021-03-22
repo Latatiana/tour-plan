@@ -12,10 +12,17 @@ const hotelSlider = new Swiper(".hotel-slider", {
   },
 });
 
-var menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", function(){
-console.log("click");
-document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+const reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
+  // Navigation arrows
+  keyboard: {
+    enabled: true,
+    },
+  navigation: {
+    nextEl: '.reviews-slider__button-next',
+    prevEl: '.reviews-slider__button-prev',
+  },
 });
 
 var menuButton = document.querySelector(".menu-button");
@@ -23,7 +30,6 @@ menuButton.addEventListener("click", function(){
 console.log("click");
 document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
 });
-
 
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
@@ -53,4 +59,55 @@ closeModalButton.on('click', closeModal);
             modalDialog.removeClass('modal__dialog--visible');
         }
 });
+
+//Обработка форм 
+$('.modal__form').validate({
+  errorClass: "invalid",
+   messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "Name must be at least 2 letters long",
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+    phone:{ 
+      required: "We need your phone number to contact you",
+
+    }
+  }
+});
+
+$('.footer__form').validate({
+  errorClass: "invalid",
+   messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "Name must be at least 2 letters long",
+    },
+    phone:{ 
+      required: "We need your phone number to contact you",
+      
+
+    }
+  }
+});
+
+$('.newsletter__subscribe').validate({
+  errorClass: "sub-invalid",
+   messages: {
+   sub: {
+      required: "We need your email address to contact you",
+      sub: "Your email address must be in the format of name@domain.com",
+    }
+  }
+});
+
+// jQuery(document).ready(function(){
+
+// 	$('.phone').mask('+0 (000) 000 00 00', {placeholder: "+7 (___) ___ __ __"});
+	
+// });
+
 });
