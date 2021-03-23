@@ -103,11 +103,5 @@ $('.newsletter__subscribe').validate({
     }
   }
 });
-
-// jQuery(document).ready(function(){
-
-// 	$('.phone').mask('+0 (000) 000 00 00', {placeholder: "+7 (___) ___ __ __"});
-	
-// });
-
+  AOS.init();
 });

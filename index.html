@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -17,20 +18,20 @@
     <header class="navbar navbar--mobile--fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="https://laktionova-tat.ru/homeworks/tour-plan/" class="logo">
+                <a href="https://laktionova-tat.ru/homeworks/tour-plan/" class="logo" data-aos="fade-right">
                     <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image">
                 </a>
 
-                <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+                <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-down">
                     <input type="text" class="search__input" placeholder="Search Location" >
                     <button class="search__button">
                         <img src="img/search.svg" alt="icon: search">
                     </button>
                 </form>
 
-                <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+                <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-left">
                     <img src="img/avatar-user.jpg" alt="avatar: Nathan" class="user__avatar">
-                    <span class="user__name">Nathan</span>
+                    <span class="user__name" >Nathan</span>
                 </a>
                 <button class="menu-button navbar-top__menu-button">
                     <span class="menu-button__line"></span>
@@ -197,9 +198,11 @@
     <!-- /.hotel -->
     <section class="packages">
         <div class="container">
-            <h2 class="packages__title">Other Packages</h2>
+            <h2 class="packages__title" data-aos="fade-down">Other Packages</h2>
             <div class="packages-wrapper">              
-                <div class="packages__present-special present-special">
+                <div class="packages__present-special present-special" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     <img src="img/packages-1.jpg" alt="LUX* Belle Mare" class="present-special__image">
                     <span class="present-special__offer">Flash Offer</span>
                     <div class="present-special-wrapper">
@@ -243,7 +246,9 @@
                 </div>
                 </div>
 
-                <div class="packages__present present-hotel">
+                <div class="packages__present present-hotel" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     <img src="img/packages-2.jpg" alt="LUX* Belle Mare" class="packages__image">
                     <span class="present-hotel__offer">Flash Offer</span>
                     <div class="present-hotel-wrapper">
@@ -274,7 +279,9 @@
                     <!-- /.present__-->                
                 </div>
 
-                <div class="packages__present present-hotel">
+                <div class="packages__present present-hotel" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     <img src="img/packages-3.jpg" alt="White Palace" class="packages__image">
                     <span class="present-hotel__offer">Flash Offer</span>
                     <div class="present-hotel-wrapper">
@@ -304,7 +311,9 @@
                 </div>
                 </div>
 
-                <div class="packages__present present-hotel">
+                <div class="packages__present present-hotel" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     <img src="img/packages-4.jpg" alt="Luxury Place" class="packages__image">
                     <span class="present-hotel__offer">Flash Offer</span>
                     <div class="present-hotel-wrapper">
@@ -335,7 +344,9 @@
                     <!-- /.present__-->
                 </div>
 
-                <div class="packages__present present-hotel">
+                <div class="packages__present present-hotel" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     <img src="img/packages-5.jpg" alt="Hotel Five Star" class="packages__image">
                     <span class="present-hotel__offer">Flash Offer</span>
                     <div class="present-hotel-wrapper">
@@ -372,11 +383,11 @@
     <!-- /.packages -->
     <section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
         <div class="newsletter-wrapper">
-            <h2 class="newsletter-title newsletter__title">
+            <h2 class="newsletter-title newsletter__title" data-aos="fade-right">
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form action="send.php" method ="POST" class="subscribe newsletter__subscribe">
+            <form action="send.php" method ="POST" class="subscribe newsletter__subscribe" data-aos="fade-left">
                    <div class="subscribe__input-group">
                     <input type="email" class="subscribe__input" placeholder="Your email address" name="sub" required>
                    </div> 
@@ -387,7 +398,7 @@
     <!-- /.newsletter -->
     <section class="reviews">
         <div class="container">
-            <h2 class="reviews__title">What people think <span class="reviews__title-wrap">about us</span></h2>
+            <h2 class="reviews__title" data-aos="fade-down">What people think <span class="reviews__title-wrap">about us</span></h2>
             <div class="swiper-container reviews-slider">
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -477,24 +488,28 @@
     <!-- /.reviews -->
     <section class="activities">
         <div class="container">
-            <h2 class="activities__title">Other Activities</h2>
+            <h2 class="activities__title" data-aos="fade-down">Other Activities</h2>
             <div class="activities-wrapper">
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-right"
+     data-aos-anchor-placement="top-center" data-aos-delay="200">
                     <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner <span class="card__title-wrap">of chamarel</span></h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-right"
+     data-aos-anchor-placement="top-center" data-aos-delay="400">
                     <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf course</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-right"
+     data-aos-anchor-placement="top-center" data-aos-delay="600">
                     <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking <span class="card__title-wrap">trip - full day</span></h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-right"
+     data-aos-anchor-placement="top-center" data-aos-delay="800">
                     <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
@@ -640,6 +655,7 @@
     <script src="js/swiper-bundle.min.js"></script>   
     <script src="js/jquery.validate.min.js"></script> 
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
