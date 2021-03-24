@@ -25,7 +25,9 @@
             &-wrapper
                 padding: 30px 30px 30px 30px
             &__text
-                margin-bottom: 15px
+                margin-bottom: 35px
+            &__image
+                width: 50%
         &-hotel
             &-wrapper
                 padding: 20px 20px 20px 20px
@@ -84,15 +86,15 @@
         height: 255px
     .packages
         &-wrapper
-            grid-template-rows: 400px 400px 400px
+            grid-template-rows: minmax(min-content, 400px) minmax(min-content, 400px) minmax(max-content, 400px)
             grid-template-columns: 1fr 1fr 1fr 1fr
             grid-gap: 15px
-        &__image
-            min-height: 200px
+
         &__present
             &-special
                 grid-column-start: 1
                 grid-column-end: 5
+
         &__address
             margin-bottom: 8px
         &__guests
@@ -111,6 +113,8 @@
             margin-left: 81.5%
     .present
         &-special
+            &__image
+                height: 430px
             &-wrapper
                 padding: 20px 20px 30px 20px
             &__rating
@@ -121,6 +125,7 @@
                 font-size: 16px
                 line-height: 20px
             &__text
+                height: 122px
                 margin-top: 0
                 margin-bottom: 18px
                 font-size: 12px
@@ -397,7 +402,7 @@
     .present
         &-special
             &-wrapper
-                padding: 20px 20px 30px 20px
+                padding: 40px 5px 20px 5px
             &__rating
                 margin-bottom: 6px
             &__title
@@ -422,7 +427,7 @@
             &:nth-child(odd)
                 grid-column: 3 / 5
             &-wrapper
-                padding: 10px 10px 10px 25px
+                padding: 15px 10px 10px 9px
             &__text
                 margin-bottom: 15px
             &__title
@@ -510,7 +515,7 @@
         padding: 30px 0 60px 0
         &-wrapper
             padding: 20px 0 70px 0
-            grid-template-rows: 300px 300px 300px 300px 300px
+            grid-template-rows: minmax(min-content, 300px) minmax(min-content, 300px) minmax(min-content, 300px) minmax(min-content, 300px) minmax(min-content, 300px)
         &__image
             width: 50%
             height: 100%
@@ -549,6 +554,8 @@
                 font-size: 8px
                 line-height: 10px
         &-special
+            &__image
+                height: 307px
             &__rating
                 display: none
             &__text
@@ -560,6 +567,7 @@
             &__info
                 margin-bottom: 30px
             &__offer
+                width: 60.24px
                 padding: 4px 9px
                 font-size: 8px
                 line-height: 10px
@@ -718,6 +726,11 @@
         &__new-price
             font-size: 13px
             line-height: 11px
+@media ( max-width: 350px )
+    .present
+        &-special
+            &__title
+                margin-bottom: 10px
 @media ( max-width: 422px )
     .hotel
         &-info
