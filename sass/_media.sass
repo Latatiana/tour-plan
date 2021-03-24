@@ -1,6 +1,4 @@
 @media ( max-width: 1200px  )
-    body
-        overflow: auto
     .container
         max-width: 960px
     .hotel
@@ -237,9 +235,6 @@
             &:hover
                 filter: brightness(100%)
 
-@media (max-width:800px)
-    
-
 @media ( max-width: 768px )
     .container
         max-width: 576px
@@ -254,6 +249,8 @@
                 top: 0
                 right: 0
                 z-index: 99
+        &__search
+            margin-left: -37px
         &__search, &__user
             &--mobile
                 &--hidden
@@ -280,7 +277,8 @@
                 &--mobile
                     &--visible
                         display: block
-
+    .search
+        width: 243px
     .menu
         &-button
             display: flex
@@ -348,7 +346,8 @@
         position: relative
         width: 100%
         &__input
-            width: 100%
+            &-group
+                width: 100%
         &__button
             position: absolute
             top: 0
@@ -435,13 +434,12 @@
                 margin-bottom: 20px
     .footer
         &__input
-            &-group
-                flex-basis: 100%
+            flex-basis: 100%
         &-bottom
             &__list
                 margin-right: auto
     .modal
-        
+
         &__dialog
             padding: 33px 40px
             width: 96%
@@ -687,7 +685,7 @@
             margin-bottom: 11px
         &__icon
             margin-right: 12px
-            
+
     .present
         &-hotel
             &-wrapper
