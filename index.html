@@ -251,7 +251,7 @@
                     <img src="img/packages-2.jpg" alt="LUX* Belle Mare" class="packages__image">
                     <span class="present-hotel__offer">Flash Offer</span>
                     <div class="present-hotel-wrapper">
-                    <h3 class="present-hotel__title">LUX* Belle Mare</h3>
+                    <h3 class="present-hotel__title present-hotel__title--first">LUX* Belle Mare</h3>
                     <div class="present-hotel__info">
                         <div class="packages__address">
                             <img src="img/packages-map.svg" alt="Ico: map" class="packages__icon">
@@ -521,7 +521,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="img/vertical-logo.svg" alt="logo: best tour plan" class="logo footer__logo">
+                <a class="logo footer__logo" href="#"><img class ="footer__logo-image" src="img/vertical-logo.svg" alt="logo: best tour plan" ></a>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
@@ -575,13 +575,15 @@
                             </li>
                             <li class="footer__item footer__item--mb-2">
                                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/phone-call-footer.svg" alt="icon: phone"></div>
-                                Tel (business hours) : 269 1500 <br>
-                                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)                                
+                                <ul class="phone__ul">
+                                <li class="phone__item">Tel (business hours) : <a class="phone__link" href="tel:2691500">269 1500 </a></li>
+                                <li class="phone__item">Tel (hotline) Monday - Saturday: <a class="phone__link" href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm) </li>
+                                <li class="phone__item">Tel (hotline) Sunday:<a class="phone__link" href="tel:52566138"> 52-56-61-38</a> (08:00 am – 14:00 pm)</li>
+                            </ul>                            
                             </li>
                             <li class="footer__item footer__item--mb-2">
                                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="icon: email"></div>
-                                cherly.lawson@example.com
+                                <a href="mailto:cherly.lawson@example.com" class="mail">cherly.lawson@example.com</a>
                             </li>
                         </ul>
                     </div>
@@ -609,8 +611,7 @@
                              class="message footer__message" 
                              placeholder="Message"
                              name="message"
-                             >
-                            </textarea>
+                             ></textarea>
                             <button class="button footer__button" type="submit">Send</button>
                             <span class="footer__info">* Required Fields</span>
                         </form>

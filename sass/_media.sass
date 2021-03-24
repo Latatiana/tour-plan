@@ -4,6 +4,10 @@
     .hotel
         &-slider
             width: 590px
+            &__button
+                &--next, &--prev
+                    width: 10px
+                    height: 18px
     .swiper
         &-slide
             &__img
@@ -159,6 +163,10 @@
         &__logo
             grid-row: 1 / 2
             grid-column: span 2
+            &-image
+                width: 104px
+                height: 120px
+                margin-top: 0
         &__social
             &-network
                 grid-row: 1 / 2
@@ -239,6 +247,12 @@
         &__button
             &:hover
                 filter: brightness(100%)
+    .phone    
+        &:hover
+            text-decoration: none
+.mail
+    &:hover
+        text-decoration: none
 
 @media ( max-width: 768px )
     .container
@@ -437,21 +451,20 @@
             &__info
                 padding: 0
                 margin-bottom: 20px
-    .footer
-        &__input
-            flex-basis: 100%
+    
         &-bottom
             &__list
                 margin-right: auto
     .modal
-
         &__dialog
             padding: 33px 40px
             width: 96%
         &__button
             margin-bottom: 10px
             width: 100%
-        &__input, &__message
+    .reviews
+        &__title
+            margin-bottom: 42px
 
 @media ( max-width: 637px )
     .present
@@ -601,7 +614,9 @@
         padding-top: 69px
         &-wrapper
             grid-template-columns: 1fr
-
+        &__input
+            &-group
+                flex-basis: 100%
         &__logo
             grid-row: 1
             grid-column: 1
@@ -671,7 +686,10 @@
     .hotel
         &-slider
             height: 179px
-
+            &__button
+                &--next, &--prev
+                    width: 4px
+                    height: 7px
     .search
         &__input
             max-width: 243px
@@ -702,6 +720,9 @@
                 margin-bottom: 25px
                 font-size: 16px
                 line-height: 20px
+                &--first
+                    margin-bottom: 10px
+                    
         &-special
             &__title
                 margin-bottom: 25px

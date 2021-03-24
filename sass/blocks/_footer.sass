@@ -10,9 +10,12 @@
         grid-auto-rows: minmax(40px, min-content)
         align-items: start
     &__logo
-        width: 166px
         grid-row: 1 / 3
         align-self: stretch
+        &-image
+            width: 166px
+            height: 192px
+            margin-top: 18px
     &__legal
         margin-left: auto
     &__categories
@@ -131,6 +134,21 @@
             color: inherit
             &:hover
                 text-decoration: underline
+.phone
+    &__ul
+        padding: 0
+        list-style: none 
+    &__item
+    &__link
+        text-decoration: none
+        color: inherit
+        &:hover
+            text-decoration: underline
+.mail
+    text-decoration: none
+    color: inherit
+    &:hover
+        text-decoration: underline
         
             
         
