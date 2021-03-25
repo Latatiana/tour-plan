@@ -1,11 +1,11 @@
 .hotel
-    padding-top: 23px
+    padding-top: 24px
     padding-bottom: 70px
     &-info
         display: flex
         align-items: center
         justify-content: space-between
-        padding-bottom: 20px
+        padding-bottom: 19px
         &__offer
             margin-left: 14px
             margin-top: 4px
@@ -13,7 +13,7 @@
             margin-top: 4px
             margin-bottom: 0
         &__description
-            margin: 5px 0
+            margin: 2px 0
     &-name
         font-size: 24px
         line-height: 30px
@@ -79,7 +79,12 @@
                 &:hover
                     filter: brightness(80%)
 .stars
+    display: inline-flex
+    width: 48px
+    height: 8px
     flex-basis: 100%
+    &__icon
+        margin-right: 3px
 
 .offer
     font-size: 10px
@@ -108,7 +113,7 @@
 .booking
     width: 350px
     min-height: 210px
-    padding: 28px
+    padding: 26px
     border-radius: 8px
     font-family: 'Nunito', sans-serif
     background: $dark
@@ -118,7 +123,6 @@
         display: flex
         justify-content: space-between
         margin-bottom: 9px
-        margin: auto
     &__price
         display: flex
         flex-direction: column
@@ -173,6 +177,8 @@
         line-height: 25px
     &__num
         margin-left: 8px
+        &:hover
+            text-decoration: underline
     &__button
         width: 100%
         min-height: 45px
@@ -190,7 +196,7 @@
 
 .map
     width: 347px
-    min-height: 210px
+    min-height: 213px
     background-color: #fff
     border-radius: 10px
     overflow: hidden

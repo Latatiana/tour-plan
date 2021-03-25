@@ -11,17 +11,17 @@
         align-items: start
     &__logo
         grid-row: 1 / 3
-        align-self: stretch
+        align-self: center
         &-image
-            width: 166px
-            height: 192px
-            margin-top: 18px
+            width: 154px
+            height: 175px
+            margin-top: 5px
     &__legal
-        margin-left: auto
+        margin-left: 68px
     &__categories
-        grid-row: 1 / 4 
+        grid-row: 1 / 4
     &__social
-        &-links            
+        &-links
             display: flex
             align-items: center
             min-width: 83px
@@ -29,18 +29,22 @@
         &-network
             display: flex
             align-items: start
-            grid-row: 2 / 4 
+            grid-row: 2 / 4
             grid-column: span 2
+            margin-top: 5px
     &__contact
         &-details
             grid-column-start: span 2
+            margin-top: 15px
         &-form
             grid-column: span 2
+            padding: 3px 0 0 2px
     &__form
         display: flex
         align-items: center
         justify-content: space-between
         flex-wrap: wrap
+        padding-top: 2px
     &__ul
         padding: 0
         margin: 0
@@ -55,9 +59,10 @@
         text-transform: uppercase
         &--inline
             margin-bottom: 0
-            margin-right: 43px
+            margin-right: 48px
         &--mb-3
-            margin-bottom: 34px
+            margin-bottom: 26px
+            margin-left: -4px
     &__item
         display: flex
         align-items: flex-start
@@ -67,11 +72,18 @@
         line-height: 160%
         color: $footer-text-color
         &--mb-2
-            margin-bottom: 26px
+            margin-bottom: 22px
     &__icon
         &-wrapper
             min-width: 40px
-    &__text
+        &-map
+            margin-left: 3px
+    &-text
+        font-size: 14px
+        line-height: 22px
+        margin-top: 0
+        margin-bottom: 22px
+        margin-left: -4px
         color: $footer-text-color
     &__link
         text-decoration: none
@@ -80,14 +92,15 @@
             text-decoration: underline
     &__input
         width: 100%
-        &-group       
+        &-group
+            max-width: 255px
             margin-top: 15px
             flex-basis: 48%
             font-style: normal
             font-weight: normal
             font-size: 12px
             line-height: 15px
-            outline: none 
+            outline: none
     &__message
         padding-top: 18px
         padding-left: 23px
@@ -100,9 +113,10 @@
         margin-top: 15px
         outline: none
     &__button
-        margin-top: 23px      
- 
+        margin-top: 23px
+
     &__info
+        margin-top: 20px
         font-style: normal
         font-weight: bold
         font-size: 12px
@@ -112,14 +126,14 @@
         display: flex
         align-items: center
         justify-content: flex-end
-        margin-top: 95px    
+        margin-top: 98px
         &__list
-            margin-right: 277px
+            margin-right: 272px
         &__ul
             display: flex
             padding: 0
             margin: 0
-            list-style: none            
+            list-style: none
         &__item
             display: flex
             align-items: flex-start
@@ -137,20 +151,15 @@
     &__phone
         &__ul
             padding: 0
-            list-style: none 
+            list-style: none
         &__item
         &__link
             text-decoration: none
             color: inherit
             &:hover
                 text-decoration: underline
-.mail
-    text-decoration: none
-    color: inherit
-    &:hover
-        text-decoration: underline
-        
-            
-        
-
-
+    &__mail
+        text-decoration: none
+        color: inherit
+        &:hover
+            text-decoration: underline

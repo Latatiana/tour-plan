@@ -6,8 +6,8 @@
             width: 590px
             &__button
                 &--next, &--prev
-                    width: 10px
-                    height: 18px
+                    width: 29px
+                    height: 30px
     .swiper
         &-slide
             &__img
@@ -114,7 +114,7 @@
             font-size: 16px
     .subscribe
         &__button
-            margin-left: 81.5%
+            margin-left: 81.8%
     .present
         &-special
             &__image
@@ -188,6 +188,8 @@
                 grid-row: 4
         &-bottom
             margin-top: 80px
+            &__list
+                margin-right: auto
     .modal
         &__dialog
             padding: 33px 60px
@@ -211,6 +213,9 @@
                 &:hover
                     filter: brightness(100%)
     .booking
+        &__num
+            &:hover
+                text-decoration: none
         &__button
             &:hover
                 filter: brightness(100%)
@@ -236,9 +241,10 @@
         &__button
             &:hover
                 filter: brightness(100%)
-        &__phone    
-            &:hover
-                text-decoration: none
+        &__phone 
+            &__link   
+                &:hover
+                    text-decoration: none
         &__link
             &:hover
                 text-decoration: none
@@ -246,14 +252,15 @@
             &__link
                 &:hover
                     text-decoration: none
+        &__mail
+            &:hover
+                text-decoration: none
     .modal
         &__button
             &:hover
                 filter: brightness(100%)
     
-.mail
-    &:hover
-        text-decoration: none
+
 
 @media ( max-width: 768px )
     .container
@@ -357,6 +364,10 @@
     iframe
         height: 210px
     .newsletter
+        &-title
+            &__strong
+                font-size: 30px
+                line-height: 38px
         &-wrapper
             flex-direction: column
             max-width: 576px
@@ -689,8 +700,8 @@
             height: 179px
             &__button
                 &--next, &--prev
-                    width: 4px
-                    height: 7px
+                    width: 11px
+                    height: 12px
     .search
         &__input
             max-width: 243px
@@ -753,6 +764,12 @@
         &-special
             &__title
                 margin-bottom: 10px
+    .footer
+        &__phone
+            &__link
+                &-wrap:before
+                    content: "\A"
+                    white-space: pre
 @media ( max-width: 422px )
     .hotel
         &-info

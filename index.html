@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel booking - Best Tour Plan</title>
     <link rel="stylesheet" href="css/style.css" >
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">    
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"  >
     <link rel="stylesheet" href="css/aos.css" >
@@ -106,11 +108,11 @@
                 <div class="hotel-info__text">
                     <div class="hotel-wrapper">
                         <div class="stars">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
+                            <img src="img/star.svg" alt="star" class="stars__icon">
+                            <img src="img/star.svg" alt="star" class="stars__icon">
+                            <img src="img/star.svg" alt="star" class="stars__icon">
+                            <img src="img/star.svg" alt="star" class="stars__icon">
+                            <img src="img/star.svg" alt="star" class="stars__icon">
                         </div>
                         <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
                         <span class="offer hotel-info__offer">Flash Offer</span>
@@ -119,7 +121,7 @@
                 </div>
                 <!-- /.hotel-info__text -->
                 <div class="rating hotel-info__rating">
-                   <span class="rating__text">User Ratting</span>
+                   <span class="rating__text">User Rattings</span>
                    <span class="rating__counter">4.5/<span class=rating__counter-small>5</span></span>
                 </div>
                 <!-- /.hotel-info__rating -->
@@ -180,7 +182,7 @@
                         </a>
                     </div>
                     <!-- /.call-center -->
-                    <button data-toggle="modal" class="button booking__button">View Other Options</button>
+                    <button data-toggle="modal" class="booking__button">View Other Options</button>
                 </div>
                 <!-- /.booking -->
                 <div class="map">
@@ -571,25 +573,25 @@
                         <p class="footer-text">Feel free to contact us by phone, email or by our contact form</p>
                         <ul class="footer__ul">
                             <li class="footer__item footer__item--mb-2">
-                                <div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-marker.svg" alt="icon: map"></div>9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                                <div class="footer__icon-wrapper"><img class="footer__icon footer__icon-map" src="img/map-marker.svg" alt="icon: map"></div>9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
                             </li>
                             <li class="footer__item footer__item--mb-2">
                                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/phone-call-footer.svg" alt="icon: phone"></div>
                                 <ul class="footer__phone__ul">
                                 <li class="footer__phone__item">Tel (business hours) : <a class="footer__phone__link" href="tel:2691500">269 1500 </a></li>
-                                <li class="footer__phone__item">Tel (hotline) Monday - Saturday: <a class="footer__phone__link" href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm) </li>
+                                <li class="footer__phone__item">Tel (hotline) Monday - Saturday: <a class="footer__phone__link footer__phone__link-wrap" href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm) </li>
                                 <li class="footer__phone__item">Tel (hotline) Sunday:<a class="footer__phone__link" href="tel:52566138"> 52-56-61-38</a> (08:00 am – 14:00 pm)</li>
                             </ul>                            
                             </li>
                             <li class="footer__item footer__item--mb-2">
                                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="icon: email"></div>
-                                <a href="mailto:cherly.lawson@example.com" class="mail">cherly.lawson@example.com</a>
+                                <a href="mailto:cherly.lawson@example.com" class="footer__mail">cherly.lawson@example.com</a>
                             </li>
                         </ul>
                     </div>
                     <!-- /.footer__contact-details -->   
                     <div class="footer__contact-form">
-                        <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+                        <h3 class="footer__title footer__title">Send us a message</h3>
                         <form action="send.php" method= "POST" class="footer__form">
                             <div class="footer__input-group">
                                 <input type="text" 
