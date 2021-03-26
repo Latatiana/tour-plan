@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel booking - Best Tour Plan</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=cb65ca87-3ef9-4b05-936c-25bf0d0c82f8&lang=ru_RU"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -120,7 +123,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="img/vertical-logo.svg" alt="logo: best tour plan" class="logo footer__logo">
+                <a class="logo footer__logo" href="https://laktionova-tat.ru/homeworks/tour-plan/"><img class="footer__logo-image" src="img/vertical-logo.svg"
+                        alt="logo: best tour plan"></a>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
@@ -170,31 +174,43 @@
                     <p class="footer-text">Feel free to contact us by phone, email or by our contact form</p>
                     <ul class="footer__ul">
                         <li class="footer__item footer__item--mb-2">
-                            <div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-marker.svg"
-                                    alt="icon: map"></div>9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                            States
+                            <div class="footer__icon-wrapper"><img class="footer__icon footer__icon-map"
+                                    src="img/map-marker.svg" alt="icon: map"></div>9748 Blossom Hill Rd undefined Lansing,
+                            Idaho 68545 United States
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper"><img class="footer__icon" src="img/phone-call-footer.svg"
                                     alt="icon: phone"></div>
-                            Tel (business hours) : 269 1500 <br>
-                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                            <ul class="footer__phone__ul">
+                                <li class="footer__phone__item">Tel (business hours) : <a class="footer__phone__link"
+                                        href="tel:2691500">269 1500 </a></li>
+                                <li class="footer__phone__item">Tel (hotline) Monday - Saturday: <a
+                                        class="footer__phone__link footer__phone__link-wrap"
+                                        href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm) </li>
+                                <li class="footer__phone__item">Tel (hotline) Sunday:<a class="footer__phone__link"
+                                        href="tel:52566138"> 52-56-61-38</a> (08:00 am – 14:00 pm)</li>
+                            </ul>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg"
                                     alt="icon: email"></div>
-                            cherly.lawson@example.com
+                            <a href="mailto:cherly.lawson@example.com" class="footer__mail">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
-                    <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+                    <h3 class="footer__title footer__title">Send us a message</h3>
                     <form action="send.php" method="POST" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-                        <textarea class="footer__message" rows="6" placeholder="Message" name="message"></textarea>
+                        <div class="footer__input-group">
+                            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name"
+                                required minlength="2" />
+                        </div>
+                        <div class="footer__input-group">
+                            <input type="tel" class="input footer__input phone" data-mask="+7 (000) 000 00 00"
+                                placeholder="Phone Number*" name="phone" required minlength="18" />
+                        </div>
+                        <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -206,10 +222,8 @@
                 <div class="footer-bottom__list">
                     <ul class="footer-bottom__ul">
                         <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Disclaimer</a></li>
-                        <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Conditions of use</a>
-                        </li>
-                        <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Cancellation policy</a>
-                        </li>
+                        <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Conditions of use</a></li>
+                        <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Cancellation policy</a></li>
                     </ul>
                 </div>
                 <img src="img/pay.png" alt="icon: pay" class="footer-bottom__image">
@@ -217,9 +231,13 @@
             <!-- /.footer__footer-bottom -->
         </div>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 

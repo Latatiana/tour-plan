@@ -1,5 +1,5 @@
 .packages
-    padding: 40px 0 70px 0
+    padding: 10px 0 70px 0
     &-wrapper
         display: grid
         grid-template-rows: minmax(min-content, 500px) minmax(min-content, 500px)
@@ -35,11 +35,11 @@
         font-size: 12px
         line-height: 15px
     &__address        
-        margin-bottom:  11px
+        margin-bottom:  8px
     &__guests
-        margin-bottom:  11px
+        margin-bottom:  8px
     &__icon
-        margin-right: 15px    
+        margin-right: 11px    
 .book
     display: flex
     align-items: flex-end
@@ -86,12 +86,13 @@
         &__image
             object-fit: cover
             width: 366px
-            height: 506px
+            height: 100%
         &-wrapper
-            padding: 40px 21px 27px 44px
+            padding: 38px 21px 0 44px
             width: 50%
             color: $light
         &__rating
+            display: inline-flex
             margin-bottom: 6px
         &__title
             margin-top: 0
@@ -102,13 +103,14 @@
             line-height: 23px
         &__text
             margin-top: 0
-            margin-bottom: 34px
+            margin-bottom: 30px
             height: 165px
             text-align: justify
             font-style: normal
             font-weight: normal
             font-size: 14px
             line-height: 160.6%
+            overflow: auto
         &__info
             margin-bottom: 37px
         &__offer
@@ -127,9 +129,9 @@
     &-hotel
         position: relative         
         &-wrapper
-            padding: 30px 21px 25px 32px
+            padding: 26px 21px 0 30px
         &__title
-            margin-bottom: 23px
+            margin-bottom: 21px
             margin-top: 0
         &__info
             padding-bottom: 24px
