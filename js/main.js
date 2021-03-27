@@ -15,10 +15,6 @@ const hotelSlider = new Swiper(".hotel-slider", {
 const reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
   loop: true,
-  // Navigation arrows
-  keyboard: {
-    enabled: true,
-    },
   navigation: {
     nextEl: '.reviews-slider__button-next',
     prevEl: '.reviews-slider__button-prev',
